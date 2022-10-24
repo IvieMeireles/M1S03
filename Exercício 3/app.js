@@ -20,3 +20,10 @@ function concatena(vetor1, vetor2){
 const novoArray = concatena ([1, 2, 3], [4, 5, 6]);
 
 console.log(novoArray);
+
+
+function concatena2(vetor3, vetor4) {
+    return [...vetor3, ...vetor4]; // não inserir os ... do spread, irá aparecer apenas como [3]Array
+}
+const novoArray2 = concatena2 (['string1', 'string2', 'string3'], ['string4', 'string5', 'string6']);
+console.log(novoArray2);

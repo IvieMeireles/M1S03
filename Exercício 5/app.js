@@ -28,8 +28,12 @@ function somaTudo(...numeros) {
     }
     return acumulador;
 }
+console.log(somaTudo (30, 60, 90, 'teste')); // irá imprimir o valor que for inserido junto no console.log 
+//também printa uma string, mas é concatenado
 
-//versao com foreach
+
+
+//versao com foreach visto na aula
 function somaTudoFE(...numeros) {
     let acumulador = 0;
     numeros.forEach (num => {
@@ -38,7 +42,7 @@ function somaTudoFE(...numeros) {
     return acumulador;
 }
 
-//versao arrow funcion
+//versao arrow funcion visto na aula
 const somaTudoAF = (...numeros) => {
     let acumulador = 0;
     for (let i = 0; i < numeros.length; i++){
@@ -47,7 +51,7 @@ const somaTudoAF = (...numeros) => {
     return acumulador;
 }
 
-// versao arrow function e reduce
+// versao arrow function e reduce visto na aula
 
 const somaTudoReduce = (...numeros) => {
     return numeros.reduce ((acumulador, num) => {

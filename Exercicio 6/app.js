@@ -15,30 +15,31 @@
 // Obs.: Use let e const para declarar variáveis se for necessário.
 // Extra: Faça com uma arrow function.
 
-
+//  
 function verificaPalindromo(texto){
-    if (typeof palavra !== 'string' ){
+    if (typeof texto !== 'string' ){
         console.log('Texto inválido');
-        return; //interrompendo a função
+        return ; //interrompendo a função
     }
 
     const meio = texto.length / 2;
     const fim = texto.length - 1;
-    let ehPalindromo = true;
 
     for (let i = 0; i < meio; i++) {
         if (texto[i] !== texto[fim -i]){
             return false;
         }
-        
+    }
     return true;
 }
 
-const teste1 = verificaPalindromo("ana");
+const teste1 = verificaPalindromo('ananana');
 console.log('ana', teste1)
 // true
 
-const teste2 = verificaPalindromo("julia");
-console.log('julia', teste2);
+const teste2 = verificaPalindromo('omississimo');
+console.log('omississimo', teste2);
+// true
+const teste3 = verificaPalindromo('ivie');
+console.log('ivie', teste3);
 // false
-}

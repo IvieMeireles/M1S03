@@ -24,17 +24,17 @@ const uneDobraRetorna = (vetor, ...extras) => {
 
 //versao com map
 
-const uneDobraRetornaMap = (vetor, ...extras) => {
-    const res = extras.map(num => num * 2); //map executa as funções e guarda em um novo array (se não entendi errado)
-    console.log(res);
-    return [...vetor, ...extras];   
-};
+// const uneDobraRetornaMap = (vetor, ...extras) => {
+//     const res = extras.map(num => num * 2); //map executa as funções e guarda em um novo array (se não entendi errado)
+//     console.log(res);
+//     return [...vetor, ...extras];   
+// };
 
 const r1 = uneDobraRetorna([1, 2, 3], 4, 4)
-//console.log(r1) // [1, 2, 3, 8, 8]
+    console.log(r1) // [1, 2, 3, 8, 8]
 
-const r2 = uneDobraRetornaMap([2], 10, 4, 8) 
-console.log(r2) // [2, 20, 8, 16]
+// const r2 = uneDobraRetornaMap([2], 10, 4, 8) 
+// console.log(r2) // [2, 20, 8, 16]
 
-const r3 = uneDobraRetorna([6, 8]) 
-//console.log(r3) // [6, 8]
+const r3 = uneDobraRetorna([6, 8], 5) 
+console.log(r3) // [6, 8, 10]
